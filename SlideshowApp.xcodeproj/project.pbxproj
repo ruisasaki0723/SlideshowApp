@@ -13,6 +13,10 @@
 		EAFB661F2452D4AC0000CAE3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EAFB661D2452D4AC0000CAE3 /* Main.storyboard */; };
 		EAFB66212452D4AE0000CAE3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EAFB66202452D4AE0000CAE3 /* Assets.xcassets */; };
 		EAFB66242452D4AE0000CAE3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EAFB66222452D4AE0000CAE3 /* LaunchScreen.storyboard */; };
+		EAFB66322452D61A0000CAE3 /* image1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = EAFB66312452D61A0000CAE3 /* image1.jpg */; };
+		EAFB66342452D61F0000CAE3 /* image2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = EAFB66332452D61F0000CAE3 /* image2.jpg */; };
+		EAFB66362452D6220000CAE3 /* image3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = EAFB66352452D6220000CAE3 /* image3.jpg */; };
+		EAFB66382452D7F10000CAE3 /* ZoomViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAFB66372452D7F10000CAE3 /* ZoomViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +28,10 @@
 		EAFB66202452D4AE0000CAE3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EAFB66232452D4AE0000CAE3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EAFB66252452D4AE0000CAE3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EAFB66312452D61A0000CAE3 /* image1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = image1.jpg; path = ../../../image1.jpg; sourceTree = "<group>"; };
+		EAFB66332452D61F0000CAE3 /* image2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = image2.jpg; path = ../../../image2.jpg; sourceTree = "<group>"; };
+		EAFB66352452D6220000CAE3 /* image3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = image3.jpg; path = ../../../image3.jpg; sourceTree = "<group>"; };
+		EAFB66372452D7F10000CAE3 /* ZoomViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZoomViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,10 +67,14 @@
 				EAFB66172452D4AC0000CAE3 /* AppDelegate.swift */,
 				EAFB66192452D4AC0000CAE3 /* SceneDelegate.swift */,
 				EAFB661B2452D4AC0000CAE3 /* ViewController.swift */,
+				EAFB66372452D7F10000CAE3 /* ZoomViewController.swift */,
 				EAFB661D2452D4AC0000CAE3 /* Main.storyboard */,
 				EAFB66202452D4AE0000CAE3 /* Assets.xcassets */,
 				EAFB66222452D4AE0000CAE3 /* LaunchScreen.storyboard */,
 				EAFB66252452D4AE0000CAE3 /* Info.plist */,
+				EAFB66312452D61A0000CAE3 /* image1.jpg */,
+				EAFB66332452D61F0000CAE3 /* image2.jpg */,
+				EAFB66352452D6220000CAE3 /* image3.jpg */,
 			);
 			path = SlideshowApp;
 			sourceTree = "<group>";
@@ -126,6 +138,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				EAFB66242452D4AE0000CAE3 /* LaunchScreen.storyboard in Resources */,
+				EAFB66342452D61F0000CAE3 /* image2.jpg in Resources */,
+				EAFB66322452D61A0000CAE3 /* image1.jpg in Resources */,
+				EAFB66362452D6220000CAE3 /* image3.jpg in Resources */,
 				EAFB66212452D4AE0000CAE3 /* Assets.xcassets in Resources */,
 				EAFB661F2452D4AC0000CAE3 /* Main.storyboard in Resources */,
 			);
@@ -141,6 +156,7 @@
 				EAFB661C2452D4AC0000CAE3 /* ViewController.swift in Sources */,
 				EAFB66182452D4AC0000CAE3 /* AppDelegate.swift in Sources */,
 				EAFB661A2452D4AC0000CAE3 /* SceneDelegate.swift in Sources */,
+				EAFB66382452D7F10000CAE3 /* ZoomViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
