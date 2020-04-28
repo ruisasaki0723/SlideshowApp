@@ -113,12 +113,21 @@ class ViewController: UIViewController {
     @IBAction func imageTap(_ sender: Any) {
         
         self.performSegue(withIdentifier: "toZoom", sender: nil)
+        
+        //タイマーを止める
+        self.timer.invalidate()
+        
+        self.timer = nil
+        go.isEnabled = true
+        back.isEnabled = true
+        //停止ボタンの名前を再生ボタンに戻す
+        startstop.setTitle("再生", for: .normal)
     }
     // 遷移先に画像を渡す
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         // segueから遷移先ののインスタンスを取得する
         let zoomViewController:ZoomViewController = segue.destination as! ZoomViewController
-
+        
         let name = imageNameArray[displayImageNo]
         
         let image = UIImage(named: name)
