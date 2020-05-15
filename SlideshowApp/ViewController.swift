@@ -24,13 +24,13 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view.
         
         //初期画面としてimage1の画像を表示する
-        let image = UIImage(named: "image1")
+        let image = UIImage(named: "image1.jpg")
         slideshow.image = image
     }
     //初期画面の番号を0にする
     var displayImageNo = 0
     //配列を作る
-    let imageNameArray = ["image1","image2","image3"]
+    let imageNameArray = ["image1.jpg","image2.jpg","image3.jpg"]
     //初期画面の番号を元に画像を表示する
     func displayImage() {
         // 初期画面の番号から名前を取り出す
@@ -114,14 +114,24 @@ class ViewController: UIViewController {
         
         self.performSegue(withIdentifier: "toZoom", sender: nil)
         
-        //タイマーを止める
-        self.timer.invalidate()
-        
-        self.timer = nil
-        go.isEnabled = true
-        back.isEnabled = true
-        //停止ボタンの名前を再生ボタンに戻す
-        startstop.setTitle("再生", for: .normal)
+        if self.timer == nil {
+            
+            go.isEnabled = true
+            back.isEnabled = true
+            
+            startstop.setTitle("再生", for: .normal)
+            
+        } else if self.timer != nil {
+            //タイマーを止める
+            self.timer.invalidate()
+            
+            self.timer = nil
+            
+            go.isEnabled = true
+            back.isEnabled = true
+            
+            startstop.setTitle("再生", for: .normal)
+        }
     }
     // 遷移先に画像を渡す
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
